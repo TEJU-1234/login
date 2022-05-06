@@ -1,21 +1,32 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-
- import { AppComponent } from './app.component';
-import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './components/register/register.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
-import { FormControl,FormGroup,Validators } from '@angular/forms';
-import { ReactiveFormsModule } from '@angular/forms';
+import { AppComponent } from './app.component';
+
+
+import { NavbarComponent } from './components/navbar/navbar.component';
+
+import { HeaderComponent } from './components/header/header.component';
+import { CategoryComponent } from './components/category/category.component';
+import { ChickenComponent } from './components/chicken/chicken.component';
+
+
+
 
 
 @NgModule({
   declarations: [
-   AppComponent,
-  LoginComponent,
-  RegisterComponent
+    AppComponent,
+
+
+    NavbarComponent,
+
+    HeaderComponent,
+    CategoryComponent,
+    ChickenComponent
 
 
   ],
@@ -23,9 +34,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    FormGroup,
-    FormControl,
-    ReactiveFormsModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

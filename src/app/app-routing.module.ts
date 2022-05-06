@@ -1,14 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './components/register/register.component';
+import { CategoryComponent } from './components/category/category.component';
+import { ChickenComponent } from './components/chicken/chicken.component';
+import { HeaderComponent } from './components/header/header.component';
+
+
+
 
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent},
 
-
+  {path:'header', component:HeaderComponent},
+  {path:'category', component:CategoryComponent},
+  { path:'chicken',component:ChickenComponent}
 ];
 
 @NgModule({
@@ -16,6 +20,3 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
-
-
-
